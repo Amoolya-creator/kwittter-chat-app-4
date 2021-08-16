@@ -1,0 +1,129 @@
+html, body
+{
+  height: 100%;
+  margin: 0;
+}
+
+body
+{
+background-image: linear-gradient(to bottom, rgb(241, 221, 183),rgb(243, 243, 198), rgb(183, 236, 183));
+}
+
+.header
+{	
+	font-family: 'Yeon Sung';
+	font-size: 75px;
+	letter-spacing: 10px;
+	margin-top: 80px;
+	animation-name: rainbow;
+	animation-duration: 10s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+
+.header img
+{
+	width: 80px;margin-left: -15px;
+}
+
+.login_div
+{
+	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
+	box-shadow: 5px 5px 10px rgb(82, 3, 64);
+}
+
+#m1{
+	text-shadow: 1px 1px 1px black;
+}
+
+.logo
+{
+	width: 80px;margin-top: 30px;border-radius: 40px;
+}
+
+#login_button
+{
+	width: 80%;border-radius: 15px;
+}
+
+#login_button:hover{
+	box-shadow: 2px 2px 2px rgb(187, 26, 228), 5px 5px 5px rgb(52, 10, 202);
+}
+
+#user_name:hover {
+	background-color: yellow ;
+}
+
+#USER{
+	color: red;
+	text-shadow: 5px 5px 5px black;
+	transition: font-size 2s ease-in;
+}
+
+#USER:hover{
+	font-size: 55px;
+}
+
+.room_name
+{
+	cursor: pointer;
+	font-size: 20px;
+}
+
+
+#logout
+{
+	font-size: 20px; float: right;
+}
+
+#output
+{
+	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+}
+
+.input_div_room_page
+{
+	width: 80%;
+}
+
+.input_div label
+{
+	color: white;font-size: 20px;
+}
+
+.input_div_message_page
+{
+	position: fixed;bottom: 0px;width: 100%;background: rgba(255,255,255,0.8);
+}
+.input_div_message_page label
+{
+	color: black;
+}
+.input_div_message_page #msg
+{
+	width: 80%;
+}
+.input_div_message_page button
+{
+	margin-top: 15px;
+	width: 50%; 
+}
+
+.message_h4
+{
+	padding-left:5px;color:grey;
+}
+
+@keyframes rainbow 
+{
+	0% {color: red;text-shadow: 5px 5px 5px rgb(105, 1, 1);}
+	12% {color : orange;text-shadow: 5px 5px 5px rgb(139, 95, 0);}
+	25% {color: yellow;text-shadow: 5px 5px 5px rgb(124, 138, 1);}
+	37% {color: chartreuse;text-shadow:5px 5px 5px rgb(33, 112, 2);}
+	50% {color:green;text-shadow:5px 5px 5px rgb(1, 70, 12);}
+	62% {color : blue;text-shadow:5px 5px 5px rgb(1, 24, 99);}
+	75% {color: violet;text-shadow: 5px 5px 5px rgb(99, 2, 102);}
+	87% {color: brown;text-shadow: 5px 5px 5px rgb(65, 39, 0);}
+	100% {color: red;text-shadow: 5px 5px 5px rgb(105, 1, 1);}
+}
+
